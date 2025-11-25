@@ -1,0 +1,41 @@
+Pruebas API Demoblaze - Signup y Login
+Crear un nuevo usuariopassed
+test body
+1
+requestPOST 200 https://api.demoblaze.com/signup
+2
+assertexpected 200 to equal 200
+3
+logResponse body: {"errorMessage":"This user already exist."}
+4
+screenshotsignup-success
+Intentar crear un usuario ya existentepassed
+test body
+1
+requestPOST 200 https://api.demoblaze.com/signup
+2
+assertexpected 200 to equal 200
+3
+logResponse body: {"errorMessage":"This user already exist."}
+4
+screenshotsignup-existing-user
+Usuario y password correctopassed
+test body
+1
+requestPOST 200 https://api.demoblaze.com/login
+2
+assertexpected 200 to equal 200
+3
+logResponse body: {"errorMessage":"Wrong password."}
+4
+screenshotlogin-success
+Usuario y password incorrectopassed
+test body
+1
+requestPOST 200 https://api.demoblaze.com/login
+2
+assertexpected 200 to equal 200
+3
+logResponse body: {"errorMessage":"Wrong password."}
+4
+screenshotlogin-fail
