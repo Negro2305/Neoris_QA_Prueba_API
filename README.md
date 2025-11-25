@@ -1,7 +1,7 @@
 # Pruebas API Demoblaze
 
 ## Instalación
-1. Instalar dependencias:
+### Instalar dependencias:
 ```bash
 npm install
 
@@ -22,4 +22,5 @@ cypress/reports/html/index.html
 
 ### Se guardan en:
 ```bash
+
 cypress/screenshots/
