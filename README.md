@@ -5,7 +5,7 @@
 ```bash
 npm install
 
-## Ejecución de pruebas
+# Ejecución de pruebas
 
 ### Ejecutar todas las pruebas y generar reportes:
 ```bash
@@ -24,3 +24,4 @@ cypress/reports/html/index.html
 ```bash
 
 cypress/screenshots/
+
